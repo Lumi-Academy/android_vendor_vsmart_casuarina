@@ -6,6 +6,9 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/vsmart/casuarina
 
 PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,vendor/vsmart/sdm632-common/proprietary/vendor/lib/modules,$(TARGET_COPY_OUT_VENDOR)/lib/modules)
+
+PRODUCT_COPY_FILES += \
     vendor/vsmart/casuarina/proprietary/bin/ppd:$(TARGET_COPY_OUT_SYSTEM)/bin/ppd \
     vendor/vsmart/casuarina/proprietary/bin/sigma_miracasthalservice:$(TARGET_COPY_OUT_SYSTEM)/bin/sigma_miracasthalservice \
     vendor/vsmart/casuarina/proprietary/bin/wfdservice:$(TARGET_COPY_OUT_SYSTEM)/bin/wfdservice \
@@ -723,21 +726,32 @@ PRODUCT_COPY_FILES += \
     vendor/vsmart/casuarina/proprietary/vendor/etc/wifi/aoa_cldb_swl14.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/aoa_cldb_swl14.bin \
     vendor/vsmart/casuarina/proprietary/vendor/etc/xtra_root_cert.pem:$(TARGET_COPY_OUT_VENDOR)/etc/xtra_root_cert.pem \
     vendor/vsmart/casuarina/proprietary/vendor/etc/xtwifi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/xtwifi.conf \
-    vendor/vsmart/casuarina/proprietary/vendor/firmware/a506_zap.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/a506_zap.b00 \
-    vendor/vsmart/casuarina/proprietary/vendor/firmware/a506_zap.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/a506_zap.b01 \
-    vendor/vsmart/casuarina/proprietary/vendor/firmware/a506_zap.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/a506_zap.b02 \
-    vendor/vsmart/casuarina/proprietary/vendor/firmware/a506_zap.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/a506_zap.elf \
-    vendor/vsmart/casuarina/proprietary/vendor/firmware/a506_zap.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/a506_zap.mdt \
-    vendor/vsmart/casuarina/proprietary/vendor/firmware/a530_gpmu.fw2:$(TARGET_COPY_OUT_VENDOR)/firmware/a530_gpmu.fw2 \
-    vendor/vsmart/casuarina/proprietary/vendor/firmware/a530_pfp.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a530_pfp.fw \
-    vendor/vsmart/casuarina/proprietary/vendor/firmware/a530_pm4.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a530_pm4.fw \
-    vendor/vsmart/casuarina/proprietary/vendor/firmware/a530v1_pfp.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a530v1_pfp.fw \
-    vendor/vsmart/casuarina/proprietary/vendor/firmware/a530v1_pm4.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a530v1_pm4.fw \
-    vendor/vsmart/casuarina/proprietary/vendor/firmware/a530v2_seq.fw2:$(TARGET_COPY_OUT_VENDOR)/firmware/a530v2_seq.fw2 \
-    vendor/vsmart/casuarina/proprietary/vendor/firmware/a530v3_gpmu.fw2:$(TARGET_COPY_OUT_VENDOR)/firmware/a530v3_gpmu.fw2 \
-    vendor/vsmart/casuarina/proprietary/vendor/firmware/a530v3_seq.fw2:$(TARGET_COPY_OUT_VENDOR)/firmware/a530v3_seq.fw2 \
-    vendor/vsmart/casuarina/proprietary/vendor/firmware/a540_gpmu.fw2:$(TARGET_COPY_OUT_VENDOR)/firmware/a540_gpmu.fw2 \
-    vendor/vsmart/casuarina/proprietary/vendor/firmware/aw8898_cfg.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8898_cfg.bin \
+    vendor/xiaomi/onclite/proprietary/vendor/firmware/a225_pfp.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a225_pfp.fw \
+    vendor/xiaomi/onclite/proprietary/vendor/firmware/a225_pm4.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a225_pm4.fw \
+    vendor/xiaomi/onclite/proprietary/vendor/firmware/a225p5_pm4.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a225p5_pm4.fw \
+    vendor/xiaomi/onclite/proprietary/vendor/firmware/a300_pfp.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a300_pfp.fw \
+    vendor/xiaomi/onclite/proprietary/vendor/firmware/a300_pm4.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a300_pm4.fw \
+    vendor/xiaomi/onclite/proprietary/vendor/firmware/a330_pfp.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a330_pfp.fw \
+    vendor/xiaomi/onclite/proprietary/vendor/firmware/a330_pm4.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a330_pm4.fw \
+    vendor/xiaomi/onclite/proprietary/vendor/firmware/a420_pfp.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a420_pfp.fw \
+    vendor/xiaomi/onclite/proprietary/vendor/firmware/a420_pm4.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a420_pm4.fw \
+    vendor/xiaomi/onclite/proprietary/vendor/firmware/a506_zap.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/a506_zap.b00 \
+    vendor/xiaomi/onclite/proprietary/vendor/firmware/a506_zap.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/a506_zap.b01 \
+    vendor/xiaomi/onclite/proprietary/vendor/firmware/a506_zap.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/a506_zap.b02 \
+    vendor/xiaomi/onclite/proprietary/vendor/firmware/a506_zap.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/a506_zap.elf \
+    vendor/xiaomi/onclite/proprietary/vendor/firmware/a506_zap.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/a506_zap.mdt \
+    vendor/xiaomi/onclite/proprietary/vendor/firmware/a530_gpmu.fw2:$(TARGET_COPY_OUT_VENDOR)/firmware/a530_gpmu.fw2 \
+    vendor/xiaomi/onclite/proprietary/vendor/firmware/a530_pfp.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a530_pfp.fw \
+    vendor/xiaomi/onclite/proprietary/vendor/firmware/a530_pm4.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a530_pm4.fw \
+    vendor/xiaomi/onclite/proprietary/vendor/firmware/a530v1_pfp.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a530v1_pfp.fw \
+    vendor/xiaomi/onclite/proprietary/vendor/firmware/a530v1_pm4.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a530v1_pm4.fw \
+    vendor/xiaomi/onclite/proprietary/vendor/firmware/a530v2_seq.fw2:$(TARGET_COPY_OUT_VENDOR)/firmware/a530v2_seq.fw2 \
+    vendor/xiaomi/onclite/proprietary/vendor/firmware/a530v3_gpmu.fw2:$(TARGET_COPY_OUT_VENDOR)/firmware/a530v3_gpmu.fw2 \
+    vendor/xiaomi/onclite/proprietary/vendor/firmware/a530v3_seq.fw2:$(TARGET_COPY_OUT_VENDOR)/firmware/a530v3_seq.fw2 \
+    vendor/xiaomi/onclite/proprietary/vendor/firmware/a540_gpmu.fw2:$(TARGET_COPY_OUT_VENDOR)/firmware/a540_gpmu.fw2 \
+    vendor/xiaomi/onclite/proprietary/vendor/firmware/a630_gmu.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/a630_gmu.bin \
+    vendor/xiaomi/onclite/proprietary/vendor/firmware/a530_pm4.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a530_pm4.fw \
+    vendor/vsmart/casuarina/proprietary/vendor/firmware/a630_sqe.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/a630_sqe.bin \
     vendor/vsmart/casuarina/proprietary/vendor/firmware/cpp_firmware_v1_10_0.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_10_0.fw \
     vendor/vsmart/casuarina/proprietary/vendor/firmware/cpp_firmware_v1_12_0.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_12_0.fw \
     vendor/vsmart/casuarina/proprietary/vendor/firmware/cpp_firmware_v1_12_1.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_12_1.fw \
@@ -758,8 +772,26 @@ PRODUCT_COPY_FILES += \
     vendor/vsmart/casuarina/proprietary/vendor/firmware/fingerprint.b05:$(TARGET_COPY_OUT_VENDOR)/firmware/fingerprint.b05 \
     vendor/vsmart/casuarina/proprietary/vendor/firmware/fingerprint.b06:$(TARGET_COPY_OUT_VENDOR)/firmware/fingerprint.b06 \
     vendor/vsmart/casuarina/proprietary/vendor/firmware/fingerprint.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/fingerprint.mdt \
+    vendor/vsmart/casuarina/proprietary/vendor/firmware/fngap64.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/fngap64.b00 \
+    vendor/vsmart/casuarina/proprietary/vendor/firmware/fngap64.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/fngap64.b01 \
+    vendor/vsmart/casuarina/proprietary/vendor/firmware/fngap64.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/fngap64.b02 \
+    vendor/vsmart/casuarina/proprietary/vendor/firmware/fngap64.b03:$(TARGET_COPY_OUT_VENDOR)/firmware/fngap64.b03 \
+    vendor/vsmart/casuarina/proprietary/vendor/firmware/fngap64.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/fngap64.b04 \
+    vendor/vsmart/casuarina/proprietary/vendor/firmware/fngap64.b05:$(TARGET_COPY_OUT_VENDOR)/firmware/fngap64.b05 \
+    vendor/vsmart/casuarina/proprietary/vendor/firmware/fngap64.b06:$(TARGET_COPY_OUT_VENDOR)/firmware/fngap64.b06 \
+    vendor/vsmart/casuarina/proprietary/vendor/firmware/fngap64.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/fngap64.mdt \
+    vendor/vsmart/casuarina/proprietary/vendor/firmware/leia_pfp_470.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/leia_pfp_470.fw \
+    vendor/vsmart/casuarina/proprietary/vendor/firmware/leia_pm4_470.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/leia_pm4_470.fw \
     vendor/vsmart/casuarina/proprietary/vendor/firmware/tas2557_uCDSP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/tas2557_uCDSP.bin \
     vendor/vsmart/casuarina/proprietary/vendor/firmware/tas2557evm_aacspk_a.ftcfg:$(TARGET_COPY_OUT_VENDOR)/firmware/tas2557evm_aacspk_a.ftcfg \
+    vendor/vsmart/casuarina/proprietary/vendor/firmware/tzvin32.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/tzvin32.b00 \
+    vendor/vsmart/casuarina/proprietary/vendor/firmware/tzvin32.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/tzvin32.b01 \
+    vendor/vsmart/casuarina/proprietary/vendor/firmware/tzvin32.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/tzvin32.b02 \
+    vendor/vsmart/casuarina/proprietary/vendor/firmware/tzvin32.b03:$(TARGET_COPY_OUT_VENDOR)/firmware/tzvin32.b03 \
+    vendor/vsmart/casuarina/proprietary/vendor/firmware/tzvin32.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/tzvin32.b04 \
+    vendor/vsmart/casuarina/proprietary/vendor/firmware/tzvin32.b05:$(TARGET_COPY_OUT_VENDOR)/firmware/tzvin32.b05 \
+    vendor/vsmart/casuarina/proprietary/vendor/firmware/tzvin32.b06:$(TARGET_COPY_OUT_VENDOR)/firmware/tzvin32.b06 \
+    vendor/vsmart/casuarina/proprietary/vendor/firmware/tzvin32.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/tzvin32.mdt \
     vendor/vsmart/casuarina/proprietary/vendor/firmware/venus.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/venus.b00 \
     vendor/vsmart/casuarina/proprietary/vendor/firmware/venus.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/venus.b01 \
     vendor/vsmart/casuarina/proprietary/vendor/firmware/venus.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/venus.b02 \
