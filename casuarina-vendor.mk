@@ -6,7 +6,37 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/vsmart/casuarina
 
 PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,vendor/vsmart/casuarina/proprietary/vendor/lib/modules,$(TARGET_COPY_OUT_VENDOR)/lib/modules)
+    vendor/vsmart/casuarina/proprietary/vendor/lib/modules/audio_adsp_loader.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/audio_adsp_loader.ko \
+    vendor/vsmart/casuarina/proprietary/vendor/lib/modules/audio_analog_cdc.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/audio_analog_cdc.ko \
+    vendor/vsmart/casuarina/proprietary/vendor/lib/modules/audio_apr.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/audio_apr.ko \
+    vendor/vsmart/casuarina/proprietary/vendor/lib/modules/audio_cpe_lsm.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/audio_cpe_lsm.ko \
+    vendor/vsmart/casuarina/proprietary/vendor/lib/modules/audio_digital_cdc.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/audio_digital_cdc.ko \
+    vendor/vsmart/casuarina/proprietary/vendor/lib/modules/audio_hdmi.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/audio_hdmi.ko \
+    vendor/vsmart/casuarina/proprietary/vendor/lib/modules/audio_machine_ext_sdm450.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/audio_machine_ext_sdm450.ko \
+    vendor/vsmart/casuarina/proprietary/vendor/lib/modules/audio_machine_sdm450.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/audio_machine_sdm450.ko \
+    vendor/vsmart/casuarina/proprietary/vendor/lib/modules/audio_mbhc.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/audio_mbhc.ko \
+    vendor/vsmart/casuarina/proprietary/vendor/lib/modules/audio_native.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/audio_native.ko \
+    vendor/vsmart/casuarina/proprietary/vendor/lib/modules/audio_pinctrl_wcd.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/audio_pinctrl_wcd.ko \
+    vendor/vsmart/casuarina/proprietary/vendor/lib/modules/audio_platform.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/audio_platform.ko \
+    vendor/vsmart/casuarina/proprietary/vendor/lib/modules/audio_q6.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/audio_q6.ko \
+    vendor/vsmart/casuarina/proprietary/vendor/lib/modules/audio_q6_notifier.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/audio_q6_notifier.ko \
+    vendor/vsmart/casuarina/proprietary/vendor/lib/modules/audio_stub.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/audio_stub.ko \
+    vendor/vsmart/casuarina/proprietary/vendor/lib/modules/audio_swr.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/audio_swr.ko \
+    vendor/vsmart/casuarina/proprietary/vendor/lib/modules/audio_swr_ctrl.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/audio_swr_ctrl.ko \
+    vendor/vsmart/casuarina/proprietary/vendor/lib/modules/audio_usf.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/audio_usf.ko \
+    vendor/vsmart/casuarina/proprietary/vendor/lib/modules/audio_wcd_core.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/audio_wcd_core.ko \
+    vendor/vsmart/casuarina/proprietary/vendor/lib/modules/audio_wcd_cpe.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/audio_wcd_cpe.ko \
+    vendor/vsmart/casuarina/proprietary/vendor/lib/modules/audio_wcd9xxx.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/audio_wcd9xxx.ko \
+    vendor/vsmart/casuarina/proprietary/vendor/lib/modules/audio_wcd9335.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/audio_wcd9335.ko \
+    vendor/vsmart/casuarina/proprietary/vendor/lib/modules/audio_wsa881x.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/audio_wsa881x.ko \
+    vendor/vsmart/casuarina/proprietary/vendor/lib/modules/audio_wsa881x_analog.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/audio_wsa881x_analog.ko \
+    vendor/vsmart/casuarina/proprietary/vendor/lib/modules/modules.alias:$(TARGET_COPY_OUT_VENDOR)/lib/modules/modules.alias \
+    vendor/vsmart/casuarina/proprietary/vendor/lib/modules/modules.dep:$(TARGET_COPY_OUT_VENDOR)/lib/modules/modules.dep \
+    vendor/vsmart/casuarina/proprietary/vendor/lib/modules/modules.load:$(TARGET_COPY_OUT_VENDOR)/lib/modules/modules.load \
+    vendor/vsmart/casuarina/proprietary/vendor/lib/modules/modules.softdep:$(TARGET_COPY_OUT_VENDOR)/lib/modules/modules.softdep \
+    vendor/vsmart/casuarina/proprietary/vendor/lib/modules/pronto_wlan.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/pronto_wlan.ko \
+    vendor/vsmart/casuarina/proprietary/vendor/lib/modules/texfat.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/texfat.ko \
+    vendor/vsmart/casuarina/proprietary/vendor/lib/modules/pronto_wlan.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/wlan.ko
 
 PRODUCT_COPY_FILES += \
     vendor/vsmart/casuarina/proprietary/bin/ppd:$(TARGET_COPY_OUT_SYSTEM)/bin/ppd \
