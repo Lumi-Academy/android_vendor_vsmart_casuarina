@@ -84,17 +84,17 @@ LensInfo : Information of the lens present in the module.
 -->
 
 <CameraConfigurationRoot>
-<!-- //[8901][Camera] Add for Main Camera s5kgm1sp driver Frank Cheng 20200406 S-->
+
   <CameraModuleConfig>
     <CameraId>0</CameraId>
-    <SensorName>s5kgm1sp</SensorName>
+    <SensorName>s5k3l6_casuarina</SensorName>
+    <ActuatorName>dw9714_casuarina</ActuatorName>
     <FlashName>pmic</FlashName>
-    <EepromName>puya_s5kgm1sp_p24c64e</EepromName>
-    <ChromatixName>s5kgm1sp_chromatix</ChromatixName>
-    <ActuatorName>dw9800</ActuatorName>
+    <EepromName>hongshi_s5k3l6_casuarina</EepromName>
+    <ChromatixName>s5k3l6_casuarina_chromatix</ChromatixName>
     <ModesSupported>1</ModesSupported>
     <Position>BACK</Position>
-    <MountAngle>90</MountAngle>
+    <MountAngle>360</MountAngle>
     <CSIInfo>
       <CSIDCore>0</CSIDCore>
       <LaneMask>0x1F</LaneMask>
@@ -102,162 +102,69 @@ LensInfo : Information of the lens present in the module.
       <ComboMode>0</ComboMode>
     </CSIInfo>
     <LensInfo>
-      <FocalLength>3.56</FocalLength>
-      <FNumber>1.8</FNumber>
-      <TotalFocusDistance>3.496</TotalFocusDistance>
-      <HorizontalViewAngle>64.9</HorizontalViewAngle>
-      <VerticalViewAngle>51.2</VerticalViewAngle>
-      <MinFocusDistance>0.1</MinFocusDistance>
-    </LensInfo>
-  </CameraModuleConfig>
-<!-- //[8901][Camera] Add for Main Camera s5kgm1sp driver Frank Cheng 20200406 E-->
-<!-- //[8901][Camera] Add for Main Camera imx363pv 2nd source driver Frank Cheng 20200504 S-->
-<!-- 
-  <CameraModuleConfig>
-    <CameraId>0</CameraId>
-    <SensorName>imx363pv_2nd</SensorName>
-    <FlashName>pmic</FlashName>
-    <EepromName>ofilm_imx363pv_bl24s64</EepromName>
-    <ChromatixName>imx363pv_2nd_chromatix</ChromatixName>
-    <ActuatorName>ak7374</ActuatorName>
-    <ModesSupported>1</ModesSupported>
-    <Position>BACK</Position>
-    <MountAngle>90</MountAngle>
-    <CSIInfo>
-      <CSIDCore>0</CSIDCore>
-      <LaneMask>0x1F</LaneMask>
-      <LaneAssign>0x4320</LaneAssign>
-      <ComboMode>0</ComboMode>
-    </CSIInfo>
-    <LensInfo>
-      <FocalLength>4.36</FocalLength>
-      <FNumber>1.8</FNumber>
-      <TotalFocusDistance>3.496</TotalFocusDistance>
-      <HorizontalViewAngle>64.9</HorizontalViewAngle>
-      <VerticalViewAngle>51.2</VerticalViewAngle>
-      <MinFocusDistance>0.1</MinFocusDistance>
-    </LensInfo>
-  </CameraModuleConfig>
--->
-<!-- //[8901][Camera] Add for Main Camera imx363pv 2nd source driver Frank Cheng 20200504 E-->
-<!-- //[8901][Camera] Add for Main Camera imx363 2nd source driver Frank Cheng 20191228 S-->
-  <CameraModuleConfig>
-    <CameraId>0</CameraId>
-    <SensorName>imx363_2nd</SensorName>
-    <FlashName>pmic</FlashName>
-    <EepromName>ofilm_imx363_bl24s64</EepromName>
-    <ChromatixName>imx363_2nd_chromatix</ChromatixName>
-    <ActuatorName>ak7374</ActuatorName>
-    <ModesSupported>1</ModesSupported>
-    <Position>BACK</Position>
-    <MountAngle>90</MountAngle>
-    <CSIInfo>
-      <CSIDCore>0</CSIDCore>
-      <LaneMask>0x1F</LaneMask>
-      <LaneAssign>0x4320</LaneAssign>
-      <ComboMode>0</ComboMode>
-    </CSIInfo>
-    <LensInfo>
-      <FocalLength>4.36</FocalLength>
-      <FNumber>1.8</FNumber>
-      <TotalFocusDistance>3.496</TotalFocusDistance>
-      <HorizontalViewAngle>64.9</HorizontalViewAngle>
-      <VerticalViewAngle>51.2</VerticalViewAngle>
-      <MinFocusDistance>0.1</MinFocusDistance>
-    </LensInfo>
-  </CameraModuleConfig>
-<!-- //[8901][Camera] Add for Main Camera imx363 2nd source driver Frank Cheng 20191228 E-->
-<!-- //[8901][Camera] Add for Main Camera imx363 driver Person 20190403 S-->
-  <CameraModuleConfig>
-    <CameraId>0</CameraId>
-    <SensorName>imx363</SensorName>
-    <FlashName>pmic</FlashName>
-    <EepromName>ofilm_imx363_bl24s64</EepromName>
-    <ChromatixName>imx363_chromatix</ChromatixName>
-    <ActuatorName>lc898217xc</ActuatorName>
-    <ModesSupported>1</ModesSupported>
-    <Position>BACK</Position>
-    <MountAngle>90</MountAngle>
-    <CSIInfo>
-      <CSIDCore>0</CSIDCore>
-      <LaneMask>0x1F</LaneMask>
-      <LaneAssign>0x4320</LaneAssign>
-      <ComboMode>0</ComboMode>
-    </CSIInfo>
-    <LensInfo>
-      <FocalLength>4.36</FocalLength>
-      <FNumber>1.8</FNumber>
-      <TotalFocusDistance>3.496</TotalFocusDistance>
-      <HorizontalViewAngle>64.9</HorizontalViewAngle>
-      <VerticalViewAngle>51.2</VerticalViewAngle>
-      <MinFocusDistance>0.1</MinFocusDistance>
-    </LensInfo>
-  </CameraModuleConfig>
-<!-- //[8901][Camera] Add for Main Camera imx363 driver Person 20190403 E-->  
-<!-- //[8901][Camera] Add for Main Camera imx486 driver Person 20181130 S-->
-  <CameraModuleConfig>
-    <CameraId>0</CameraId>
-    <SensorName>imx486</SensorName>
-    <ChromatixName>imx486_chromatix</ChromatixName>
-    <ActuatorName>lc898219</ActuatorName>
-    <FlashName>pmic</FlashName>
-    <EepromName>tsp_imx486_fm24c64</EepromName>
-    <ModesSupported>1</ModesSupported>
-    <Position>BACK</Position>
-    <MountAngle>90</MountAngle>
-    <CSIInfo>
-      <CSIDCore>0</CSIDCore>
-      <LaneMask>0x1F</LaneMask>
-      <LaneAssign>0x4320</LaneAssign>
-      <ComboMode>0</ComboMode>
-    </CSIInfo>
-    <LensInfo>
-      <FocalLength>3.84</FocalLength>
-      <FNumber>1.8</FNumber>
-      <TotalFocusDistance>1.9</TotalFocusDistance>
-      <HorizontalViewAngle>78.7</HorizontalViewAngle>
-      <VerticalViewAngle>51.6</VerticalViewAngle>
-      <MinFocusDistance>0.1</MinFocusDistance>
-    </LensInfo>
-  </CameraModuleConfig>
-<!-- //[8901][Camera] Add for Main Camera imx486 driver Person 20181130 S  -->
-<!-- //<2018/10/18-Yuting Shih.[FAIRPHONE][MISC][COMMON][CAMERA][][]Add new front camera device driver S5K4H7YX. -->
-  <CameraModuleConfig>
-    <CameraId>2</CameraId>
-    <SensorName>s5k4h7yx</SensorName>
-  <!-- OTP source -->
-    <EepromName>samsung_s5k4h7yx</EepromName>
-    <ChromatixName>s5k4h7yx_chromatix</ChromatixName>
-    <ModesSupported>1</ModesSupported>
-    <Position>FRONT</Position>
-    <MountAngle>270</MountAngle>
-    <SensorSlaveAddress>0x20</SensorSlaveAddress>
-    <CSIInfo>
-    <!-- CSID change 2 to 1. SDM450 support 2 CSID cores. MSM8953 is 3 CSID cores -->
-      <CSIDCore>1</CSIDCore>
-      <LaneMask>0x1F</LaneMask>
-      <LaneAssign>0x4320</LaneAssign>
-      <ComboMode>0</ComboMode>
-    </CSIInfo>
-    <LensInfo>
-      <FocalLength>2.58</FocalLength>
+      <FocalLength>3.519</FocalLength>
       <FNumber>2.0</FNumber>
-      <TotalFocusDistance>1.5</TotalFocusDistance>
-      <HorizontalViewAngle>71.5</HorizontalViewAngle>
-      <VerticalViewAngle>56.7</VerticalViewAngle>
+      <TotalFocusDistance>1.9</TotalFocusDistance>
+      <HorizontalViewAngle>64.5</HorizontalViewAngle>
+      <VerticalViewAngle>50.3</VerticalViewAngle>
       <MinFocusDistance>0.1</MinFocusDistance>
     </LensInfo>
   </CameraModuleConfig>
-<!-- //>2018/10/18-Yuting Shih.[FAIRPHONE][MISC][COMMON][CAMERA][][]. -->
-  <CameraModuleConfig>
-    <CameraId>2</CameraId>
-    <SensorName>s5k3p9sp</SensorName>
-    <EepromName>s5k3p9sp_p24c64e</EepromName>
-    <ChromatixName>s5k3p9sp_chromatix</ChromatixName>
+
+<CameraModuleConfig>
+    <CameraId>1</CameraId>
+    <SensorName>s5k4h7yx_casuarina</SensorName>
+    <EepromName>tsp_s5k4h7_casuarina</EepromName>
+    <ChromatixName>s5k4h7yx_casuarina_chromatix</ChromatixName>     
     <ModesSupported>1</ModesSupported>
     <Position>FRONT</Position>
     <MountAngle>270</MountAngle>
-    <SensorSlaveAddress>0x20</SensorSlaveAddress>    
+    <CSIInfo>
+      <CSIDCore>2</CSIDCore>
+      <LaneMask>0x1F</LaneMask>
+      <LaneAssign>0x4320</LaneAssign>
+      <ComboMode>0</ComboMode>
+    </CSIInfo>
+    <LensInfo>
+      <FocalLength>2.79</FocalLength>
+      <FNumber>2</FNumber>
+      <TotalFocusDistance>1.2</TotalFocusDistance>
+      <HorizontalViewAngle>66</HorizontalViewAngle>
+      <VerticalViewAngle>51.7</VerticalViewAngle>
+    </LensInfo>
+  </CameraModuleConfig>
+
+<CameraModuleConfig>
+    <CameraId>2</CameraId>
+    <SensorName>gc2385_casuarina</SensorName>
+    <ChromatixName>gc2385_casuarina_chromatix</ChromatixName>
+    <ModesSupported>1</ModesSupported>
+    <Position>BACK_AUX</Position>
+    <MountAngle>90</MountAngle>
+    <CSIInfo>
+      <CSIDCore>1</CSIDCore>
+      <LaneMask>0x3</LaneMask>
+      <LaneAssign>0x4320</LaneAssign>
+      <ComboMode>0</ComboMode>
+    </CSIInfo>
+    <LensInfo>
+      <FocalLength>2.0</FocalLength>
+      <FNumber>2.4</FNumber>
+      <TotalFocusDistance>2.5</TotalFocusDistance>
+      <HorizontalViewAngle>71.0</HorizontalViewAngle>
+      <VerticalViewAngle>56.0</VerticalViewAngle>
+      <MinFocusDistance>0.21</MinFocusDistance>
+    </LensInfo>
+  </CameraModuleConfig>
+
+<CameraModuleConfig>
+    <CameraId>3</CameraId>
+    <SensorName>ov8856_4lane_casuarina</SensorName>
+    <EepromName>holitech_ov8856_casuarina</EepromName>
+    <ChromatixName>ov8856_casuarina_chromatix</ChromatixName>
+    <ModesSupported>1</ModesSupported>
+    <Position>BACK_AUX</Position>
+    <MountAngle>90</MountAngle>
     <CSIInfo>
       <CSIDCore>1</CSIDCore>
       <LaneMask>0x1F</LaneMask>
@@ -265,12 +172,15 @@ LensInfo : Information of the lens present in the module.
       <ComboMode>0</ComboMode>
     </CSIInfo>
     <LensInfo>
-      <FocalLength>4.05</FocalLength>
+      <FocalLength>1.88</FocalLength>
       <FNumber>2.2</FNumber>
-      <TotalFocusDistance>1.9</TotalFocusDistance>
-      <HorizontalViewAngle>60.0</HorizontalViewAngle>
-      <VerticalViewAngle>45.0</VerticalViewAngle>
-      <MinFocusDistance>0.1</MinFocusDistance>
+      <TotalFocusDistance>0.7</TotalFocusDistance>
+      <HorizontalViewAngle>95.0</HorizontalViewAngle>
+      <VerticalViewAngle>75.0</VerticalViewAngle>
+      <MinFocusDistance>0.35</MinFocusDistance>
     </LensInfo>
   </CameraModuleConfig>
+
 </CameraConfigurationRoot>
+
+
