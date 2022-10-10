@@ -53,10 +53,6 @@ PRODUCT_COPY_FILES += \
     vendor/vsmart/casuarina/proprietary/lib/hw/vendor.qti.hardware.sigma_miracast@1.0-impl.so:$(TARGET_COPY_OUT_SYSTEM)/lib/hw/vendor.qti.hardware.sigma_miracast@1.0-impl.so \
     vendor/vsmart/casuarina/proprietary/lib/libFileMux.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libFileMux.so \
     vendor/vsmart/casuarina/proprietary/lib/libOmxMux.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libOmxMux.so \
-    vendor/vsmart/casuarina/proprietary/lib/libjni_burstpmk.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libjni_burstpmk.so \
-    vendor/vsmart/casuarina/proprietary/lib/libjni_imageutil.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libjni_imageutil.so \
-    vendor/vsmart/casuarina/proprietary/lib/libjni_snapcammosaic.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libjni_snapcammosaic.so \
-    vendor/vsmart/casuarina/proprietary/lib/libjni_snapcamtinyplanet.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libjni_snapcamtinyplanet.so \
     vendor/vsmart/casuarina/proprietary/lib/libmiracastsystem.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmiracastsystem.so \
     vendor/vsmart/casuarina/proprietary/lib/libmmcamera_faceproc.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmmcamera_faceproc.so \
     vendor/vsmart/casuarina/proprietary/lib/libmmcamera_faceproc2.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmmcamera_faceproc2.so \
@@ -92,10 +88,6 @@ PRODUCT_COPY_FILES += \
     vendor/vsmart/casuarina/proprietary/lib64/hw/vendor.qti.hardware.sigma_miracast@1.0-impl.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/hw/vendor.qti.hardware.sigma_miracast@1.0-impl.so \
     vendor/vsmart/casuarina/proprietary/lib64/libFileMux.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libFileMux.so \
     vendor/vsmart/casuarina/proprietary/lib64/libOmxMux.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libOmxMux.so \
-    vendor/vsmart/casuarina/proprietary/lib64/libjni_burstpmk.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libjni_burstpmk.so \
-    vendor/vsmart/casuarina/proprietary/lib64/libjni_imageutil.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libjni_imageutil.so \
-    vendor/vsmart/casuarina/proprietary/lib64/libjni_snapcammosaic.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libjni_snapcammosaic.so \
-    vendor/vsmart/casuarina/proprietary/lib64/libjni_snapcamtinyplanet.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libjni_snapcamtinyplanet.so \
     vendor/vsmart/casuarina/proprietary/lib64/libmiracastsystem.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmiracastsystem.so \
     vendor/vsmart/casuarina/proprietary/lib64/libmmcamera_faceproc.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmmcamera_faceproc.so \
     vendor/vsmart/casuarina/proprietary/lib64/libmmcamera_faceproc2.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmmcamera_faceproc2.so \
@@ -556,7 +548,6 @@ PRODUCT_COPY_FILES += \
     vendor/vsmart/casuarina/proprietary/vendor/etc/acdbdata/MTP/MTP_Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/MTP_Hdmi_cal.acdb \
     vendor/vsmart/casuarina/proprietary/vendor/etc/acdbdata/MTP/MTP_Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/MTP_Headset_cal.acdb \
     vendor/vsmart/casuarina/proprietary/vendor/etc/acdbdata/MTP/MTP_Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/MTP_Speaker_cal.acdb \
-    vendor/vsmart/casuarina/proprietary/vendor/etc/acdbdata/MTP/MTP_workspaceFile.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/MTP_workspaceFile.qwsp \
     vendor/vsmart/casuarina/proprietary/vendor/etc/acdbdata/MTP/msm8953-tasha-snd-card/MTP_WCD9335_Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/msm8953-tasha-snd-card/MTP_WCD9335_Bluetooth_cal.acdb \
     vendor/vsmart/casuarina/proprietary/vendor/etc/acdbdata/MTP/msm8953-tasha-snd-card/MTP_WCD9335_General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/msm8953-tasha-snd-card/MTP_WCD9335_General_cal.acdb \
     vendor/vsmart/casuarina/proprietary/vendor/etc/acdbdata/MTP/msm8953-tasha-snd-card/MTP_WCD9335_Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/msm8953-tasha-snd-card/MTP_WCD9335_Global_cal.acdb \
@@ -564,7 +555,6 @@ PRODUCT_COPY_FILES += \
     vendor/vsmart/casuarina/proprietary/vendor/etc/acdbdata/MTP/msm8953-tasha-snd-card/MTP_WCD9335_Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/msm8953-tasha-snd-card/MTP_WCD9335_Hdmi_cal.acdb \
     vendor/vsmart/casuarina/proprietary/vendor/etc/acdbdata/MTP/msm8953-tasha-snd-card/MTP_WCD9335_Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/msm8953-tasha-snd-card/MTP_WCD9335_Headset_cal.acdb \
     vendor/vsmart/casuarina/proprietary/vendor/etc/acdbdata/MTP/msm8953-tasha-snd-card/MTP_WCD9335_Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/msm8953-tasha-snd-card/MTP_WCD9335_Speaker_cal.acdb \
-    vendor/vsmart/casuarina/proprietary/vendor/etc/acdbdata/MTP/msm8953-tasha-snd-card/MTP_WCD9335_workspaceFile.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/msm8953-tasha-snd-card/MTP_WCD9335_workspaceFile.qwsp \
     vendor/vsmart/casuarina/proprietary/vendor/etc/acdbdata/QRD/QRD_Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/QRD/QRD_Bluetooth_cal.acdb \
     vendor/vsmart/casuarina/proprietary/vendor/etc/acdbdata/QRD/QRD_General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/QRD/QRD_General_cal.acdb \
     vendor/vsmart/casuarina/proprietary/vendor/etc/acdbdata/QRD/QRD_Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/QRD/QRD_Global_cal.acdb \
@@ -572,7 +562,6 @@ PRODUCT_COPY_FILES += \
     vendor/vsmart/casuarina/proprietary/vendor/etc/acdbdata/QRD/QRD_Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/QRD/QRD_Hdmi_cal.acdb \
     vendor/vsmart/casuarina/proprietary/vendor/etc/acdbdata/QRD/QRD_Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/QRD/QRD_Headset_cal.acdb \
     vendor/vsmart/casuarina/proprietary/vendor/etc/acdbdata/QRD/QRD_Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/QRD/QRD_Speaker_cal.acdb \
-    vendor/vsmart/casuarina/proprietary/vendor/etc/acdbdata/QRD/QRD_workspaceFile.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/QRD/QRD_workspaceFile.qwsp \
     vendor/vsmart/casuarina/proprietary/vendor/etc/acdbdata/QRD/msm8953-sku4-snd-card/QRD_SKU4_Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/QRD/msm8953-sku4-snd-card/QRD_SKU4_Bluetooth_cal.acdb \
     vendor/vsmart/casuarina/proprietary/vendor/etc/acdbdata/QRD/msm8953-sku4-snd-card/QRD_SKU4_General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/QRD/msm8953-sku4-snd-card/QRD_SKU4_General_cal.acdb \
     vendor/vsmart/casuarina/proprietary/vendor/etc/acdbdata/QRD/msm8953-sku4-snd-card/QRD_SKU4_Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/QRD/msm8953-sku4-snd-card/QRD_SKU4_Global_cal.acdb \
@@ -581,14 +570,6 @@ PRODUCT_COPY_FILES += \
     vendor/vsmart/casuarina/proprietary/vendor/etc/acdbdata/QRD/msm8953-sku4-snd-card/QRD_SKU4_Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/QRD/msm8953-sku4-snd-card/QRD_SKU4_Headset_cal.acdb \
     vendor/vsmart/casuarina/proprietary/vendor/etc/acdbdata/QRD/msm8953-sku4-snd-card/QRD_SKU4_Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/QRD/msm8953-sku4-snd-card/QRD_SKU4_Speaker_cal.acdb \
     vendor/vsmart/casuarina/proprietary/vendor/etc/acdbdata/QRD/msm8953-sku4-snd-card/QRD_SKU4_workspaceFile.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/QRD/msm8953-sku4-snd-card/QRD_SKU4_workspaceFile.qwsp \
-    vendor/vsmart/casuarina/proprietary/vendor/etc/acdbdata/TAS/TAS_WCD9335_Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/TAS/TAS_WCD9335_Bluetooth_cal.acdb \
-    vendor/vsmart/casuarina/proprietary/vendor/etc/acdbdata/TAS/TAS_WCD9335_General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/TAS/TAS_WCD9335_General_cal.acdb \
-    vendor/vsmart/casuarina/proprietary/vendor/etc/acdbdata/TAS/TAS_WCD9335_Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/TAS/TAS_WCD9335_Global_cal.acdb \
-    vendor/vsmart/casuarina/proprietary/vendor/etc/acdbdata/TAS/TAS_WCD9335_Handset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/TAS/TAS_WCD9335_Handset_cal.acdb \
-    vendor/vsmart/casuarina/proprietary/vendor/etc/acdbdata/TAS/TAS_WCD9335_Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/TAS/TAS_WCD9335_Hdmi_cal.acdb \
-    vendor/vsmart/casuarina/proprietary/vendor/etc/acdbdata/TAS/TAS_WCD9335_Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/TAS/TAS_WCD9335_Headset_cal.acdb \
-    vendor/vsmart/casuarina/proprietary/vendor/etc/acdbdata/TAS/TAS_WCD9335_Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/TAS/TAS_WCD9335_Speaker_cal.acdb \
-    vendor/vsmart/casuarina/proprietary/vendor/etc/acdbdata/TAS/TAS_WCD9335_workspaceFile.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/TAS/TAS_WCD9335_workspaceFile.qwsp \
     vendor/vsmart/casuarina/proprietary/vendor/etc/apdr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/apdr.conf \
     vendor/vsmart/casuarina/proprietary/vendor/etc/cacert_location.pem:$(TARGET_COPY_OUT_VENDOR)/etc/cacert_location.pem \
     vendor/vsmart/casuarina/proprietary/vendor/etc/camera/camera_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/camera_config.xml \
@@ -630,6 +611,15 @@ PRODUCT_COPY_FILES += \
     vendor/vsmart/casuarina/proprietary/vendor/etc/data/dsi_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/dsi_config.xml \
     vendor/vsmart/casuarina/proprietary/vendor/etc/data/netmgr_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/netmgr_config.xml \
     vendor/vsmart/casuarina/proprietary/vendor/etc/default-permissions/com.qualcomm.qti.cne.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default-permissions/com.qualcomm.qti.cne.xml \
+    vendor/vsmart/casuarina/proprietary/vendor/etc/hbtp/hbtpcfg.dat:$(TARGET_COPY_OUT_VENDOR)/etc/hbtp/hbtpcfg.dat \
+    vendor/vsmart/casuarina/proprietary/vendor/etc/hbtp/hbtpcfg_adsp_800s_fhd.dat:$(TARGET_COPY_OUT_VENDOR)/etc/hbtp/hbtpcfg_adsp_800s_fhd.dat \
+    vendor/vsmart/casuarina/proprietary/vendor/etc/hbtp/hbtpcfg_msm8953_800s_fhd.dat:$(TARGET_COPY_OUT_VENDOR)/etc/hbtp/hbtpcfg_msm8953_800s_fhd.dat \
+    vendor/vsmart/casuarina/proprietary/vendor/etc/hbtp/hbtpcfg_sdm450_801s_fhdp.dat:$(TARGET_COPY_OUT_VENDOR)/etc/hbtp/hbtpcfg_sdm450_801s_fhdp.dat \
+    vendor/vsmart/casuarina/proprietary/vendor/etc/hbtp/hbtpcfg2.dat:$(TARGET_COPY_OUT_VENDOR)/etc/hbtp/hbtpcfg2.dat \
+    vendor/vsmart/casuarina/proprietary/vendor/etc/hbtp/loader.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/hbtp/loader.cfg \
+    vendor/vsmart/casuarina/proprietary/vendor/etc/hbtp/qtc800h.bin:$(TARGET_COPY_OUT_VENDOR)/etc/hbtp/qtc800h.bin \
+    vendor/vsmart/casuarina/proprietary/vendor/etc/hbtp/qtc800s_dsp.bin:$(TARGET_COPY_OUT_VENDOR)/etc/hbtp/qtc800s_dsp.bin \
+    vendor/vsmart/casuarina/proprietary/vendor/etc/hbtp/qtc801s_450.bin:$(TARGET_COPY_OUT_VENDOR)/etc/hbtp/qtc801s_450.bin \
     vendor/vsmart/casuarina/proprietary/vendor/etc/ftm_test_config:$(TARGET_COPY_OUT_VENDOR)/etc/ftm_test_config \
     vendor/vsmart/casuarina/proprietary/vendor/etc/ftm_test_config_msm8953-sku3-tasha-snd-card:$(TARGET_COPY_OUT_VENDOR)/etc/ftm_test_config_msm8953-sku3-tasha-snd-card \
     vendor/vsmart/casuarina/proprietary/vendor/etc/ftm_test_config_msm8953-sku4-snd-card:$(TARGET_COPY_OUT_VENDOR)/etc/ftm_test_config_msm8953-sku4-snd-card \
@@ -1265,6 +1255,9 @@ PRODUCT_COPY_FILES += \
     vendor/vsmart/casuarina/proprietary/vendor/lib/rfsa/adsp/libdspCV_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libdspCV_skel.so \
     vendor/vsmart/casuarina/proprietary/vendor/lib/rfsa/adsp/libfastcvadsp.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libfastcvadsp.so \
     vendor/vsmart/casuarina/proprietary/vendor/lib/rfsa/adsp/libfastcvadsp_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libfastcvadsp_skel.so \
+    vendor/vsmart/casuarina/proprietary/vendor/lib/rfsa/adsp/libFastRPC_AUE_Forward_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libFastRPC_AUE_Forward_skel.so \
+    vendor/vsmart/casuarina/proprietary/vendor/lib/rfsa/adsp/libFastRPC_UTF_Forward_Qtc2_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libFastRPC_UTF_Forward_Qtc2_skel.so \
+    vendor/vsmart/casuarina/proprietary/vendor/lib/rfsa/adsp/libscveBlobDescriptor_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libscveBlobDescriptor_skel.so \
     vendor/vsmart/casuarina/proprietary/vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libscveObjectSegmentation_skel.so \
     vendor/vsmart/casuarina/proprietary/vendor/lib/rfsa/adsp/libscveT2T_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libscveT2T_skel.so \
     vendor/vsmart/casuarina/proprietary/vendor/lib/sensor_calibrate.so:$(TARGET_COPY_OUT_VENDOR)/lib/sensor_calibrate.so \
